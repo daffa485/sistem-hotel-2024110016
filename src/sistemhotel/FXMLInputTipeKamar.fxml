@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemhotel.FXMLInputTipeKamarController">
+   <children>
+      <Label layoutX="35.0" layoutY="20.0" text="Kelola Data Tipe Kamar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="70.0" text="ID Tipe Kamar" />
+      <TextField fx:id="txtid" layoutX="155.0" layoutY="66.0" prefWidth="180.0" promptText="Contoh: STD, DLX" />
+      <Label layoutX="35.0" layoutY="108.0" text="Nama Tipe" />
+      <TextField fx:id="txtnama" layoutX="155.0" layoutY="104.0" prefWidth="280.0" promptText="Contoh: Standard Room" />
+      <Label layoutX="35.0" layoutY="146.0" text="Kapasitas (Orang)" />
+      <TextField fx:id="txtkapasitas" layoutX="155.0" layoutY="142.0" prefWidth="100.0" promptText="Contoh: 2" />
+      <Label layoutX="35.0" layoutY="184.0" text="Deskripsi Fasilitas" />
+      <TextArea fx:id="txtdeskripsi" layoutX="155.0" layoutY="180.0" prefHeight="70.0" prefWidth="280.0" promptText="Fasilitas kamar..." wrapText="true" />
+      <Label layoutX="35.0" layoutY="262.0" text="File Gambar" />
+      <TextField fx:id="txtgambar" layoutX="155.0" layoutY="258.0" prefWidth="195.0" promptText="Path / nama file gambar" />
+      <Button fx:id="btnPilihGambar" layoutX="358.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnPilihGambarKlik" prefWidth="77.0" text="Pilih..." />
+      <ImageView fx:id="imgPreview" fitHeight="80.0" fitWidth="120.0" layoutX="155.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnSimpan" layoutX="155.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnSimpanKlik" prefWidth="80.0" text="Simpan" />
+      <Button fx:id="btnBatal" layoutX="245.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnBatalKlik" prefWidth="80.0" text="Batal" />
+   </children>
+</AnchorPane>

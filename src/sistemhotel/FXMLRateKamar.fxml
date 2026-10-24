@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemhotel.FXMLRateKamarController">
+   <children>
+      <Label layoutX="35.0" layoutY="20.0" text="Data Master Rate / Harga Kamar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCari" layoutX="35.0" layoutY="58.0" onKeyReleased="#txtCariKeyTyped" prefHeight="25.0" prefWidth="210.0" promptText="Cari rate / tipe kamar..." />
+      <Button fx:id="btnCari" layoutX="252.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnCariKlik" text="Cari" />
+      <Button fx:id="btnTambah" layoutX="505.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnTambahKlik" prefWidth="65.0" text="Tambah" />
+      <Button fx:id="btnUbah" layoutX="577.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnUbahKlik" prefWidth="65.0" text="Ubah" />
+      <Button fx:id="btnHapus" layoutX="649.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnHapusKlik" prefWidth="65.0" text="Hapus" />
+      <TableView fx:id="tbvratekamar" layoutX="35.0" layoutY="95.0" prefHeight="320.0" prefWidth="680.0">
+        <columns>
+          <TableColumn fx:id="colIdRate" prefWidth="100.0" text="ID Rate" />
+          <TableColumn fx:id="colIdTipe" prefWidth="120.0" text="ID / Tipe Kamar" />
+          <TableColumn fx:id="colNamaRate" prefWidth="160.0" text="Nama Rate" />
+          <TableColumn fx:id="colHarga" prefWidth="130.0" text="Harga per Malam" />
+          <TableColumn fx:id="colKeterangan" prefWidth="160.0" text="Keterangan" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnFirst" layoutX="35.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnFirstKlik" prefWidth="55.0" text="First" />
+      <Button fx:id="btnPrev" layoutX="97.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnPrevKlik" prefWidth="55.0" text="Prev" />
+      <Button fx:id="btnNext" layoutX="159.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnNextKlik" prefWidth="55.0" text="Next" />
+      <Button fx:id="btnLast" layoutX="221.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnLastKlik" prefWidth="55.0" text="Last" />
+   </children>
+</AnchorPane>

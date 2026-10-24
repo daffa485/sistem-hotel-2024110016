@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemhotel.FXMLInputCustomerController">
+   <children>
+      <Label layoutX="35.0" layoutY="20.0" text="Kelola Data Tamu / Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="68.0" text="ID Customer" />
+      <TextField fx:id="txtid" layoutX="150.0" layoutY="64.0" prefWidth="250.0" promptText="Contoh: CUST001" />
+      <Label layoutX="35.0" layoutY="106.0" text="Nomor Identitas" />
+      <TextField fx:id="txtidentitas" layoutX="150.0" layoutY="102.0" prefWidth="250.0" promptText="NIK / No Paspor" />
+      <Label layoutX="35.0" layoutY="144.0" text="Nama Lengkap" />
+      <TextField fx:id="txtnama" layoutX="150.0" layoutY="140.0" prefWidth="250.0" promptText="Nama tamu" />
+      <Label layoutX="35.0" layoutY="182.0" text="No Telepon" />
+      <TextField fx:id="txttelepon" layoutX="150.0" layoutY="178.0" prefWidth="250.0" promptText="08xxxxxxxxxx" />
+      <Label layoutX="35.0" layoutY="220.0" text="Email" />
+      <TextField fx:id="txtemail" layoutX="150.0" layoutY="216.0" prefWidth="250.0" promptText="email@domain.com" />
+      <Label layoutX="35.0" layoutY="258.0" text="Alamat" />
+      <TextArea fx:id="txtalamat" layoutX="150.0" layoutY="254.0" prefHeight="60.0" prefWidth="250.0" promptText="Alamat lengkap..." wrapText="true" />
+      <Button fx:id="btnSimpan" layoutX="150.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnSimpanKlik" prefWidth="80.0" text="Simpan" />
+      <Button fx:id="btnBatal" layoutX="240.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnBatalKlik" prefWidth="80.0" text="Batal" />
+   </children>
+</AnchorPane>
